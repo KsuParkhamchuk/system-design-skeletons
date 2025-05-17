@@ -1,0 +1,25 @@
+# skeleton of docker compose file
+
+services:
+  backend:
+    build: .
+    ports:
+      - "9000:9000"
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  cache:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+volumes:
+  pgdata:
+  redisdata:
+      
