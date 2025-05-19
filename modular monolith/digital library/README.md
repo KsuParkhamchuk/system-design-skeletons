@@ -1,8 +1,8 @@
-### Requirements
-
-**Description:**
+## Description
 
 A small digital app library that is supposed to be used by a library to mek its books more accessible to the users in different formats.
+
+## Requirements
 
 **Design assumptions:**
 
@@ -14,7 +14,8 @@ A small digital app library that is supposed to be used by a library to mek its 
 - One cover image size ~ 1MB
 - One book metadata size ~ 2KB
 
-**Use cases:**
+### **Use cases:**
+
 Admin:
 
 1. Library admin can upload pdf books
@@ -31,13 +32,13 @@ User:
 5. User can filter pdf books by author, format, language, category
 6. User can follow youtube or other links to check other book formats
 
-### High-level design
+## High-level design
 
-![alt text](./img/high-level-design.png)
+![high level design](./img/high-level-design.png)
 
-### Choice reasoning
+## Choice reasoning
 
-**Architechture:**
+### **Architechture:**
 
 Modular Monolith
 
@@ -47,6 +48,17 @@ _Reasoning:_
 2. The modular monolith has a clear separation of concerns that can be scaled to microservices in the future.
 3. Fast for MVP development.
 
-**Technological stack:**
+### **Technological stack:**
 
-**Project structure:**
+| Component                     | Technology | Reasoning |
+| ----------------------------- | ---------- | --------- |
+| `Client Consumer(frontend)`   |            |           |
+| `Client Management(frontend)` |            |           |
+| `Server`                      |            |           |
+| `Logging`                     |            |           |
+| `Monitoring`                  |            |           |
+| `Database`                    |            |           |
+| `Cache`                       |            |           |
+| `Blob storage`                |            |           |
+
+### **Project structure:**

@@ -1,9 +1,10 @@
-### Requirements
+## Description
 
-**Description:**
 This is a Windsurf, cursor like IDE for AI code completion.
 
-**Design assumptions:**
+## Requirements
+
+### **Design assumptions:**
 
 1. MAU: 1 000 000
 2. DAU: 100 000
@@ -37,43 +38,38 @@ Stored on the Cloud:
 - multiuser collaboration data
 - monitoring data
 
-**Use cases:**
+### **Use cases:**
 
 1. Project creation and maintaining
 2. Human AI interactions via chat
 
-### High-level design
+## High-level design
 
 ![high level design](./img/high-level-design.png)
 
-### Choice reasoning
+### **Choice reasoning:**
 
 **Architechture:**
 
 Microkernel - for the core application
 
-**Components:**
-
-1. Core IDE Application
-2. Plugins
-3. API Gateway
-4. Server
-5. Logging
-6. Monitoring
-7. LLM Layer
-8. Message queue
-9. Distributed cache
-10. Relational database
-11. Blob storage
-12. NoSQL database
-
 _Reasoning:_
 
-**Technological stack:**
+### **Technological stack:**
 
-Core IDE Application: Electron
+| Component              | Technology | Reasoning                                               |
+| ---------------------- | ---------- | ------------------------------------------------------- |
+| `Core IDE Application` | Electron   | 1. Cross platform, web technologies 2. Web technologies |
+| `Plugins`              |            |                                                         |
+| `API Gateway`          |            |                                                         |
+| `Server`               |            |
+| `Logging`              |            |
+| `Monitoring`           |            |
+| `LLM Layer`            |            |
+| `Message queue`        |            |
+| `Distributed cache`    | Redis      |
+| `Relational database`  | PostgreSQL |
+| `Blob storage`         | AWS S3     |
+| `NoSQL database`       | MongoDB    |
 
-1. Cross platform
-2. Web technologies
-
-**Project structure:**
+### **Project structure:**
