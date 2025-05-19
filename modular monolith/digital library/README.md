@@ -31,6 +31,10 @@ User:
 5. User can filter pdf books by author, format, language, category
 6. User can follow youtube or other links to check other book formats
 
+### High-level design
+
+![alt text](./img/high-level-design.png)
+
 ### Choice reasoning
 
 **Architechture:**
@@ -43,6 +47,6 @@ _Reasoning:_
 2. The modular monolith has a clear separation of concerns that can be scaled to microservices in the future.
 3. Fast for MVP development.
 
-### High-level design
+**Technological stack:**
 
-![alt text](./img/high-level-design.png)
+**Project structure:**
