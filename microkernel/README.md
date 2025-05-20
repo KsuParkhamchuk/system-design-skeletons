@@ -1,6 +1,6 @@
 ## Description
 
-This is a Windsurf, cursor like IDE for AI code completion.
+This is a Windsurf clone, cursor like IDE for AI code completion.
 
 ## Requirements
 
@@ -57,19 +57,19 @@ _Reasoning:_
 
 ### **Technological stack:**
 
-| Component              | Technology | Reasoning                                               |
-| ---------------------- | ---------- | ------------------------------------------------------- |
-| `Core IDE Application` | Electron   | 1. Cross platform, web technologies 2. Web technologies |
-| `Plugins`              |            |                                                         |
-| `API Gateway`          |            |                                                         |
-| `Server`               |            |
-| `Logging`              |            |
-| `Monitoring`           |            |
-| `LLM Layer`            |            |
-| `Message queue`        |            |
-| `Distributed cache`    | Redis      |
-| `Relational database`  | PostgreSQL |
-| `Blob storage`         | AWS S3     |
-| `NoSQL database`       | MongoDB    |
+| Component              | Technology                                        | Reasoning                                                                                                                                                                                                                |
+| ---------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Core IDE Application` | Electron                                          | 1. Cross platform<br> 2. Web technologies                                                                                                                                                                                |
+| `Plugins`              |                                                   |                                                                                                                                                                                                                          |
+| `API Gateway`          |                                                   |                                                                                                                                                                                                                          |
+| `Server`               | NodeJS - Server component <br> Python - LLM Layer | NodeJS has native WebSockets support. Good for concurrent connections. Will be easier to integrate with a client app as it is based on JS as well. <br> LLM Layer uses Python because of the best ecosystem for LLMs     |
+| `Logging`              |                                                   |
+| `Monitoring`           |                                                   |
+| `LLM Layer`            |                                                   |
+| `Message queue`        |                                                   |
+| `Distributed cache`    | Redis                                             | 1. Platform independent <br> 2. Rich data structure support <br> 3. Commercial use support <br> 4. Open source 5. Advanced queuing capabilities                                                                          |
+| `Relational database`  | PostgreSQL                                        | 1. Twice cheaper than Oracle or 1,5x cheaper than SQL Server <br> 2. No vendor lock-in <br> 3. Good third party vendor support <br> 4. Open source and platform independent <br> 5. Many people who have expertise in it |
+| `Blob storage`         | AWS S3                                            |
+| `NoSQL database`       | MongoDB                                           |
 
 ### **Project structure:**
