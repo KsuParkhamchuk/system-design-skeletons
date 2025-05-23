@@ -40,7 +40,7 @@ Each architecture has its own README.md file with more details.
 
 7. Microkernel
 
-   Project: Windsurf
+   Project: Windsurf Clone
 
 8. Hexagonal/Ports and Adapters
 
@@ -53,3 +53,7 @@ Each architecture has its own README.md file with more details.
 10. DDD (Domain-Driven Design)
 
     Project:
+
+11. Mix: Event-driven + Microservices
+
+    Project: GPT like system
