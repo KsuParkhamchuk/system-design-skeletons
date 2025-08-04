@@ -45,7 +45,7 @@ Stored on the Cloud:
 
 ## High-level design
 
-![high level design](./img/high-level-design.png)
+![high level design](./img/mckernel-high-level-design.png)
 
 ### **Choice reasoning:**
 
